@@ -18,5 +18,6 @@ def main():
     execute_from_command_line(sys.argv)
 
 
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'BackendRestApi.settings')
 if __name__ == '__main__':
     main()
