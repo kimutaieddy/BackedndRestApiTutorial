@@ -1,4 +1,4 @@
-#!/home/kurt/Projects/DJango/BackedndRestApi/DjangoRest/env/bin/python3
+#!/home/kurt/Projects/DJango/BackedndRestApi/DjangoRest/env/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
