@@ -6,6 +6,7 @@ from rest_framework import permisiions, viewsets
 
 from world.quickstart.serializers import UserSerializer, GroupSerializer
 
+# The UserViewSet class is similar to the User model, except that it uses the User model and has a different set of fields.
 
 class UserViewSet(viewsets.ModelViewSet):
     """
@@ -15,6 +16,7 @@ class UserViewSet(viewsets.ModelViewSet):
     serializer_class = UserSerializer
     permisiions_classes = [permisiions.IsAuthenticated]
 
+# The GroupViewSet class is similar to the UserViewSet class, except that it uses the Group model and has a different set of fields.
 
 class GroupViewSet(viewsets.ModelViewSet):
     quesryset = Group.objects.all().order_by('name')
