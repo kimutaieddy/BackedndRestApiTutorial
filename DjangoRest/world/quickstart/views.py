@@ -17,4 +17,6 @@ class UserViewSet(viewsets.ModelViewSet):
 
 
 class GroupViewSet(viewsets.ModelViewSet):
-    
+    quesryset = Group.objects.all().order_by('name')
+    serializer_class = GroupSerializer
+    permisiions_classes = [permisiions.IsAuthenticated]
