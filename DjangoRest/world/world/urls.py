@@ -5,8 +5,8 @@ from rest_framework import routers
 
 # Create a router object
 router = routers.DefaultRouter()
-router.register(r'users', views.UserViewSet)    # Register the UserViewSet with the router
-router.register(r'groups', views.GroupViewSet)  # Register the GroupViewSet with the router
+router.register(r'users', views.UserViewSet)    # Register the UserViewSet with the router  
+router.register(r'groups', views.GroupViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),  # Include the router URLs
