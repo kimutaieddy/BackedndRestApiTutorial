@@ -1,4 +1,4 @@
-from quickstart import views
+from world.quickstart import views
 from django.urls import path,include
 from rest_framework import routers
 
