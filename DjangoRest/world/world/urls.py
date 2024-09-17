@@ -18,7 +18,6 @@ from django.contrib import admin
 from django.urls import path,include
 from rest_framework import routers
 from world.quickstart import views
-#
 
 routers = routers.DefaultRouter()   #create a router object
 routers.register(r'users',views.UserViewSet)    #register the viewset with the router
