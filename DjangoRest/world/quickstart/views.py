@@ -19,6 +19,6 @@ class UserViewSet(viewsets.ModelViewSet):
 # The GroupViewSet class is similar to the UserViewSet class, except that it uses the Group model and has a different set of fields.
 
 class GroupViewSet(viewsets.ModelViewSet):
-    quesryset = Group.objects.all().order_by('name')
+    quesryset = Group.objects.all()
     serializer_class = GroupSerializer
     permisiions_classes = [permissions.IsAuthenticated]
