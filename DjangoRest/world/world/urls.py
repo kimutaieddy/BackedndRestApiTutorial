@@ -19,7 +19,7 @@ from django.urls import path,include
 
 #
 
-routers =routers.defaultRouter()
+routers = routers.DefaultRouter()   #create a router object
 routers.register(r'users',views.UserViewSet)    #register the viewset with the router
 routers.register(r'groups',views.GroupViewSet)  #register the viewset with the router
 
