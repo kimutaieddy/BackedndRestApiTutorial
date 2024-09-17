@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.contrib.auth.models import User, Group
 from rest_framework import permissions, viewsets
 
-from world.quickstart.serializers import UserSerializer, GroupSerializer
+from quickstart.serializers import UserSerializer, GroupSerializer
 
 # The UserViewSet class is similar to the User model, except that it uses the User model and has a different set of fields.
 
@@ -14,11 +14,11 @@ class UserViewSet(viewsets.ModelViewSet):
     """
     queryset = User.objects.all().order_by('-date_joined')
     serializer_class = UserSerializer
-    permisiions_classes = [permisiions.IsAuthenticated]
+    permisiions_classes = [permissions.IsAuthenticated]
 
 # The GroupViewSet class is similar to the UserViewSet class, except that it uses the Group model and has a different set of fields.
 
 class GroupViewSet(viewsets.ModelViewSet):
     quesryset = Group.objects.all().order_by('name')
     serializer_class = GroupSerializer
-    permisiions_classes = [permisiions.IsAuthenticated]
+    permisiions_classes = [permissions.IsAuthenticated]
