@@ -23,7 +23,6 @@ routers.register(r'users',views.UserViewSet)    #register the viewset with the r
 routers.register(r'Groups',views.GroupViewSet)  #register the viewset with the router
 
 urlpatterns = [
-    path('admin/',admin.site.urls),
     path('',include(routers.urls)),  #include the router urls
     path('api-auth/',include('rest_framework.urls',namespace='rest_framework'))  #include the rest_framework urls
 ]
